@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Ro`yxatdan o`tish uchun formani to`ldiring:</h1>
+    <form action="/register/" method="post">{% csrf_token %}
+        <input type="text" name="login" placeholder="Login">
+        <input type="password" name="parol" placeholder="Parol">
+        <button type="submit">Qo`shish</button>
+    </form>
+</body>
+</html>
